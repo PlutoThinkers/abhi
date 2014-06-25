@@ -1,7 +1,7 @@
 xero
 ====
 
-Small Automated Acceptance Test for Creating A New Repeating Invoice Function for Xero Web Application
+Small Automated Acceptance Test for Creating A New Repeating Invoice Function using the Xero Web Application
 
 Minimum requirements:
 - Eclipse or similar IDE
@@ -15,3 +15,5 @@ C:\Users\<your-windows-username>\AppData\Local\Temp\concordion\nz\xero\com\speci
 
 Future updates:
 - Install screen shots extension for Concordion (http://concordion.org/extensions/ScreenshotExtension.html)
+- Put all the test data in a properties file
+- Create a simple build script and use Ivy or similar dependency management tool
