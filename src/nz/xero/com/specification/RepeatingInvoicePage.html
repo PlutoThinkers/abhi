@@ -1,0 +1,78 @@
+<html xmlns:c="http://www.concordion.org/2007/concordion" xmlns:ext="urn:concordion-extensions:2010">
+<link href="../../concordion.css" rel="stylesheet"
+	type="text/css" />
+<head>
+<title>Feature: Creating New Repeating Invoice</title>
+</head>
+<body>
+
+
+	<div class="feature-description">
+		<h1>Feature: Creating New Repeating Invoice</h1>
+
+		<h2>Acceptance Criteria</h2>
+
+		<ol>
+			<li>I can create a repeating invoice with an end date.</li>
+			<li>I can create a repeating invoice without an end date.</li>
+			<li>I can create a repeating invoice that repeats every week.</li>
+			<li>I can create a repeating invoice that repeats every month.</li>			
+		</ol>
+	</div>
+
+  
+ <div class="example">
+		<h2>Example 1: I can create a repeating invoice with an end date.</h2>
+		<dl>
+			<dt>Given:</dt>
+			<dd>I create a new repeating invoice with an end date <b c:set="#endDate">20 Oct 2020</b><span c:execute="createNewRepeatingInvoice(#endDate)"></span></dd>
+		</dl>
+		<dl>
+			<dt>Then:</dt>
+  			<dd c:assertTrue="isRepeatingInvoiceEndDateDisplayed()" ext:screenshot="">It will create a repeating invoice with the end date 20 Oct 2020</dd>
+		</dl>
+	</div>
+
+ 	<div class="example">
+		<h2>Example 2: I can create a repeating invoice without an end date.</h2>
+		<dl>
+			<dt>Given:</dt>
+			<dd><span c:set="#endDate"></span>I create a new repeating invoice without an end date<span c:execute="createNewRepeatingInvoice(#endDate)"></span></dd>
+
+		</dl>
+		<dl>
+			<dt>Then:</dt>
+			<dd c:assertFalse="isRepeatingInvoiceEndDateDisplayed()">It will create a repeating invoice displaying no end date.</dd>
+		</dl>
+	</div>
+	
+   	<div class="example">
+		<h2>Example 3: I can create a new repeating invoice that repeats every week.</h2>
+		<dl>
+			<dt>Given:</dt>
+			<dd><span c:set="#endDate"></span>I create a new repeating invoice that repeats every week<span c:execute="createNewRepeatingInvoice(#endDate)"></span></dd>
+
+		</dl>
+		<dl>
+			<dt>Then:</dt>
+			<dd c:assertTrue="isRepeatingInvoiceWeeklyDisplayed">It will create a repeating invoice displaying that it repeats every week.</dd>
+		</dl>
+	</div>
+  	
+ 	<div class="example">
+		<h2>Example 4: I can create a repeating invoice that repeats every month.</h2>
+		<dl>
+			<dt>Given:</dt>
+			<dd>I create a new repeating invoice that repeats every month</dd>
+
+		</dl>
+		<dl>
+			<dt>Then:</dt>
+			<dd c:assertTrue="isRepeatingInvoiceMonthlyDisplayed()">It will create a repeating invoice displaying that it repeats every month.</dd>
+		</dl>
+	</div>
+
+
+
+</body>
+</html>
