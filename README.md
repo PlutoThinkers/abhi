@@ -15,7 +15,7 @@ C:\Users\<your-windows-username>\AppData\Local\Temp\concordion\nz\xero\com\speci
 
 Future updates:
 - Put all the test data in a properties file
+- Encrypt password in data file
+- Refactor page objects to remove xpath and cleaner
 - Install screen shots extension for Concordion (http://concordion.org/extensions/ScreenshotExtension.html)
 - Create a simple build script and use Ivy or similar dependency management tool
-- Refactor action and page objects
-- Fix failing test
