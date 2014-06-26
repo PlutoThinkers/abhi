@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RepeatingInvoicesPage {
 	
@@ -52,12 +50,7 @@ public class RepeatingInvoicesPage {
 	public void createNewRepeatingInvoice(WebDriver webDriver, String repeatingInvoiceEndDate) {		
 		periodUnitField.clear();
 		periodUnitField.sendKeys("2");				
-		
-		webDriver.findElement(By.id("TimeUnit_toggle")).click();
-		WebDriverWait wait = new WebDriverWait(webDriver, 5);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.selected")));			
-		webDriver.findElement(By.cssSelector("div.selected")).click();
-		
+				
 		nextInvoiceDateField.sendKeys("30 Jun 2014");
 		dueDateDay.sendKeys("10");
 		endDate.sendKeys(repeatingInvoiceEndDate);
@@ -73,22 +66,10 @@ public class RepeatingInvoicesPage {
 		
 	}
 		
-	public void gotoRepeatingInvoicePage(WebDriver webDriver){
-		webDriver.navigate().to("https://go.xero.com/AccountsReceivable/SearchRepeating.aspx");
-	}
-		
 	public boolean isRepeatingInvoiceEndDateDisplayed() {
 		if (repeatingInvoiceEndDate.isEmpty()){
 			return false;
 		} else 
 			return true;
-	}
-
-	public boolean isRepeatingInvoiceWeeklyDisplayed() {
-		return true;
-	}
-
-	public boolean isRepeatingInvoiceMonthlyDisplayed() {
-		return true;
 	}
 }

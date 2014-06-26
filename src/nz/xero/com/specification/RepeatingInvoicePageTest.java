@@ -18,11 +18,4 @@ public class RepeatingInvoicePageTest {
     	
     }
     
-    public boolean isRepeatingInvoiceWeeklyDisplayed(){
-    	return xeroWebApplicationAction.isRepeatingInvoiceWeeklyDisplayed();
-    }
-    
-    public boolean isRepeatingInvoiceMonthlyDisplayed(){
-    	return xeroWebApplicationAction.isRepeatingInvoiceMonthlyDisplayed();
-    }
-}
+ }
