@@ -4,7 +4,7 @@ xero
 Small Automated Acceptance Test for Creating A New Repeating Invoice Function using the Xero Web Application
 
 Minimum requirements:
-- Eclipse or similar IDE
+- Eclipse or similar a
 - Firefox
 
 How to run automated acceptance test:
