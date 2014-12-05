@@ -11,5 +11,5 @@
 	<classpathentry kind="lib" path="C:/dev/workspaces/xero/lib/selenium-java-2.42.2/selenium-java-2.42.2.jar"/>
 	<classpathentry kind="lib" path="C:/dev/workspaces/xero/lib/selenium-java-2.42.2/selenium-java-2.42.2-srcs.jar"/>
 	<classpathentry kind="lib" path="C:/dev/workspaces/xero/lib/selenium-java-2.42.2/selenium-server-standalone-2.42.2.jar"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry knd="output" path="bin"/>
 </classpath>
