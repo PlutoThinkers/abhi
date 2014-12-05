@@ -7,8 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-	private static final String username = "tsefesi@gmail.com";
-	private static final String password = "rh72ispoo";	
+	private static final String username = "thinkdifferent30@gmail.com";
+	private static final String password = "8loversden;	
 	
     @FindBy(id = "email")
     private static WebElement emailInputElement;
