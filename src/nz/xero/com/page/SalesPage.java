@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Sales{
+public class SalesPage{
 	
     @FindBy(css = "#ext-gen1036 > span")
     private WebElement newButton;
