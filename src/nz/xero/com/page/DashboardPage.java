@@ -3,9 +3,9 @@ package nz.xero.com.page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class DashboardPage {
+public class Dashboard{
 	
-	public DashboardPage(WebDriver webDriver){
+	public Dashboard(WebDriver webDriver){
 		PageFactory.initElements(webDriver, this);
 	}
 
