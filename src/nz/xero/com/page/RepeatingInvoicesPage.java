@@ -51,13 +51,13 @@ public class RepeatingInvoicesPage {
 		periodUnitField.clear();
 		periodUnitField.sendKeys("2");				
 				
-		nextInvoiceDateField.sendKeys("30 Jun 2014");
+		nextInvoiceDateField.sendKeys("7  Dec 2014");
 		dueDateDay.sendKeys("10");
 		endDate.sendKeys(repeatingInvoiceEndDate);
 		this.repeatingInvoiceEndDate = repeatingInvoiceEndDate;
 		approveOption.click();
-		invoiceToField.sendKeys("Coca Cola Ltd");
-		referenceField.sendKeys("REF123456789");	
+		invoiceToField.sendKeys("Walmart Ltd");
+		referenceField.sendKeys("REF78788788");	
 		
 		webDriver.findElement(By.xpath("//div[@id='ext-gen20']/div/table/tbody/tr/td[2]/div")).click();
 		webDriver.findElement(By.id("ext-gen52")).click();
