@@ -10,7 +10,7 @@ public class Invoices {
   @FindBy(linkText = "Click to view.")
   private WebElement clickToViewRepeatingInvoiceLink;	
 	
-    public InvoicesPage(WebDriver webDriver){
+    public Invoices(WebDriver webDriver){
         PageFactory.initElements(webDriver, this);
     }		
 	
